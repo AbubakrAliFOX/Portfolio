@@ -131,7 +131,7 @@ const TextLoop = styled.div`
 `;
 
 const Span = styled.span`
-  color: ${({ theme }) => theme.primary};
+  color: rgba(0,99,255,1);
   cursor: pointer;
 `;
 

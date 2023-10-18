@@ -96,7 +96,7 @@ const Tags = styled.div`
 const Tag = styled.div`
     font-size: 14px;
     font-weight: 400;
-    color: ${({ theme }) => theme.primary};
+    color: aqua;
     margin: 4px;
     padding: 4px 8px;
     border-radius: 8px;

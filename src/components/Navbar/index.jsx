@@ -112,7 +112,7 @@ const GitHubButton = styled.a`
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: white;
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;

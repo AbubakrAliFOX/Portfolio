@@ -173,7 +173,7 @@ const MobileMenuItems = styled.ul`
   height: 100%;
 `
 
-const MobileMenuLink = styled(LinkR)`
+const MobileMenuLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -196,9 +196,7 @@ const Navbar = () => {
         <Nav>
             <NavbarContainer>
             <NavLogo to='/'>
-              <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-                 <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-             </a>
+              <svg width="64px" height="64px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1.5 11V6.5C1.5 5.39543 2.39543 4.5 3.5 4.5C4.60457 4.5 5.5 5.39543 5.5 6.5V11M1.5 8.5H5.5M12 7.5H9.5M12 7.5C12.8284 7.5 13.5 6.82843 13.5 6C13.5 5.17157 12.8284 4.5 12 4.5H9.5V7.5M12 7.5C12.8284 7.5 13.5 8.17157 13.5 9C13.5 9.82843 12.8284 10.5 12 10.5H9.5V7.5M7.5 1V14" stroke="#ffffff"></path> </g></svg>
             </NavLogo>
             <MobileIcon>
                 <FaBars onClick={() => {
@@ -213,7 +211,7 @@ const Navbar = () => {
                     <NavLink href='#education'>Education</NavLink>
                 </NavItems>
                 <ButtonContainer>
-                    <GitHubButton>Github Profile</GitHubButton>
+                    <GitHubButton target="_blank" href={Bio.github}>Github Profile</GitHubButton>
                 </ButtonContainer>
             </NavbarContainer>
             {
@@ -222,7 +220,7 @@ const Navbar = () => {
                         <MobileMenuLink href="#about" onClick={() => {
                         setOpen(!open)
                         }}>About</MobileMenuLink>
-                        <MobileMenuLink href='#skills' onClick={() => {
+                        <MobileMenuLink href='/#skills' onClick={() => {
                         setOpen(!open)
                         }}>Skills</MobileMenuLink>
                         <MobileMenuLink href='#experience' onClick={() => {

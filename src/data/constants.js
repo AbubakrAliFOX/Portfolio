@@ -6,14 +6,12 @@ export const Bio = {
       "German Teacher"
     ],
     description:
-      "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+      "With a keyboard as my paintbrush, I create user-centric experiences, one line of code at a time. I'm on a mission to bridge innovation and creativity, one project at a time. Welcome to my world of code, design, and possibilities.",
     github: "https://github.com/AbubakrAliFOX",
     resume:
       "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
-    linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    twitter: "https://twitter.com/RishavChanda",
-    insta: "https://www.instagram.com/rishav_chanda/",
-    facebook: "https://www.facebook.com/rishav.chanda.165/",
+    linkedin: "https://www.linkedin.com/in/abubakr-eldaw/",
+    facebook: "https://www.facebook.com/profile.php?id=61550096896475",
   };
   
   export const skills = [
@@ -314,12 +312,4 @@ export const Bio = {
       github: "https://github.com/AbubakrAliFOX/React-Todo-List-",
       webapp: "https://github.com/AbubakrAliFOX/React-Todo-List-",
     }
-  ];
-  
-  export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Worked as a freelance developer" },
-    { year: 2019, text: "Founded JavaScript Mastery" },
-    { year: 2020, text: "Shared my projects with the world" },
-    { year: 2021, text: "Started my own platform" },
   ];

@@ -120,7 +120,7 @@ const GitHubButton = styled.a`
   font-size: 16px;
   transition: all 0.6s ease-in-out;
     &:hover {
-      background-color: ${({ theme }) => theme.primary};
+      background-color: #0063ff;
       color: ${({ theme }) => theme.white};     
     }
     @media screen and (max-width: 773px) { 
@@ -232,7 +232,7 @@ const Navbar = () => {
                         <MobileMenuLink href='#education' onClick={() => {
                         setOpen(!open)
                         }}>Education</MobileMenuLink>
-                        <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
+                        <GitHubButton style={{padding: '10px 16px',backgroundColor: `#0063ff`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
                     </MobileMenu>
                 )
             }

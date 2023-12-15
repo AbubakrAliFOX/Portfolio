@@ -13,6 +13,7 @@ z-index: 1;
 align-items: center;
 @media (max-width: 960px) {
     padding: 0px;
+    padding-top:40px;
 }
 `
 
@@ -48,9 +49,10 @@ const Desc = styled.div`
     text-align: center;
     max-width: 600px;
     color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
+    @media (width < 768px) {
         margin-top: 12px;
         font-size: 16px;
+        padding: 0 20px;
     }
 `;
 

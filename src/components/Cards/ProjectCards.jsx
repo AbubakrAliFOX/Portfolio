@@ -64,9 +64,6 @@ const Tag = styled.span`
     padding: 2px 8px;
     border-radius: 10px;
     border: 1px solid ${({ theme }) => theme.text_secondary};
-    @media only screen and (max-width: 600px) {
-        font-size: 12px;
-    }
 `
 
 const Details = styled.div`

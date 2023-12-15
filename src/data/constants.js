@@ -27,7 +27,7 @@ export const skills = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
       {
-        name: "React Js",
+        name: "React",
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
@@ -125,14 +125,14 @@ export const experiences = [
     role: "Frontend Developer",
     company: "",
     date: "Oct 2023 - Present",
-    desc: "Aspiring to be a Front-End Web Developer, I am passionate about crafting user-friendly web interfaces. Proficient in HTML, CSS, and JavaScript, ReactJS, NodeJS and much more.I'm eager to apply my skills and collaborate on projects that create seamless and captivating online experiences.",
+    desc: "Aspiring to be a Front-End Web Developer, I am passionate about crafting user-friendly web interfaces. Proficient in HTML, CSS, and JavaScript, ReactJS, Node.jS and much more.I'm eager to apply my skills and collaborate on projects that create seamless and captivating online experiences.",
     skills: [
       "HTML",
       "CSS",
       "JavaScript",
-      "ReactJS",
-      "NodeJs",
-      "ExpressJS",
+      "React",
+      "Node.js",
+      "Express.jS",
       "Mongo DB",
       "EJS",
       "Material UI",
@@ -214,16 +214,16 @@ export const projects = [
       "YelpCamp is a full-stack web application that allows users to discover and share campgrounds. It supports a wide range of features, including Create, Read, Update, and Delete (CRUD) operations for campgrounds and reviews, RESTful APIs for data management, and several other functionalities. The application is built using Express.js, MongoDB, EJS, Bootstrap, geocoding with Leaflet.js, and Cloudinary for image management.",
     image: "Screenshot 2023-10-23 165628.webp",
     tags: [
-      "NodeJs",
-      "ExpressJs",
+      "Node.js",
+      "Express.js",
       "MongoDB",
       "JavaScript",
       "EJS",
       "HTML",
       "CSS",
-      "Bootstrap 5",
-      "Geocoding",
-      "Cloudinary"
+      "Bootstrap",
+      "Leaflet.js",
+      "Cloudinary",
     ],
     category: "web app",
     github: "https://github.com/AbubakrAliFOX/YelpCamp",
@@ -237,13 +237,13 @@ export const projects = [
       "TV Scout is a dynamic web application that empowers users to explore and discover their favorite TV shows effortlessly. With an intuitive interface and a wealth of features, TV Scout is your ideal companion for TV show enthusiasts. Whether you're seeking the latest episodes, browsing through a vast catalog, or simply exploring show details, TV Scout has you covered.",
     image: "TV.webp",
     tags: [
-      "NodeJs",
-      "ExpressJs",
+      "Node.js",
+      "Express.js",
       "JavaScript",
       "EJS",
       "HTML",
       "CSS",
-      "Bootstrap 5",
+      "Bootstrap",
       "YouTube's API",
       "TV Maze's API",
     ],
@@ -270,7 +270,7 @@ export const projects = [
     description:
       "Welcome to my portfolio! This digital space is a reflection of my journey as a web developer. I'm very passionate about making captivating web experiences and building projects.",
     image: "Portfolio.webp",
-    tags: ["React", "JavaScript", "MaterialUI", "HTML", "CSS"],
+    tags: ["React", "JavaScript", "Material UI", "HTML", "CSS"],
     category: "Web",
     github: "https://github.com/AbubakrAliFOX/Portfolio",
     webapp: "https://portfolio-kfwr.onrender.com",
@@ -293,9 +293,114 @@ export const projects = [
     date: "",
     description: "A basic Todo List App to practice React and React State.",
     image: "Todo.webp",
-    tags: ["React", "JavaScript", "MaterialUI", "CSS"],
+    tags: ["React", "JavaScript", "Material UI", "CSS"],
     category: "Web",
     github: "https://github.com/AbubakrAliFOX/React-Todo-List-",
     webapp: "https://todolist-m5au.onrender.com/",
+  },
+];
+
+export const SkillsList = [
+  {
+    name: "HTML",
+    image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+  },
+  {
+    name: "CSS",
+    image: "https://www.svgrepo.com/show/349330/css3.svg",
+  },
+  {
+    name: "JavaScript",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+  },
+  {
+    name: "React",
+    image:
+      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+  },
+  {
+    name: "Material UI",
+    image: "https://www.svgrepo.com/show/354048/material-ui.svg",
+  },
+  {
+    name: "Bootstrap",
+    image: "https://www.svgrepo.com/show/353498/bootstrap.svg",
+  },
+  {
+    name: "Bulma",
+    image: "https://www.svgrepo.com/show/353527/bulma.svg",
+  },
+  {
+    name: "Node.js",
+    image: "https://www.svgrepo.com/show/452075/node-js.svg",
+  },
+  {
+    name: "Express.js",
+    image: "express-svgrepo-com.svg",
+  },
+  {
+    name: "MongoDB",
+    image: "https://www.svgrepo.com/show/331488/mongodb.svg",
+  },
+  {
+    name: "EJS",
+    image: "https://www.svgrepo.com/show/373574/ejs.svg",
+  },
+  {
+    name: "REST API",
+    image: "api-app-svgrepo-com.svg",
+  },
+  {
+    name: "Git",
+    image: "https://www.svgrepo.com/show/452210/git.svg",
+  },
+  {
+    name: "GitHub",
+    image: "https://www.svgrepo.com/show/439171/github.svg",
+  },
+  {
+    name: "Postman",
+    image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
+  },
+  {
+    name: "English",
+    image: "https://hatscripts.github.io/circle-flags/flags/gb.svg",
+  },
+  {
+    name: "German",
+    image: "https://hatscripts.github.io/circle-flags/flags/de.svg",
+  },
+  {
+    name: "Excel",
+    image: "https://www.svgrepo.com/show/373589/excel.svg",
+  },
+  {
+    name: "PowerPoint",
+    image: "https://www.svgrepo.com/show/373989/powerpoint.svg",
+  },
+  {
+    name: "Word",
+    image: "https://www.svgrepo.com/show/374187/word.svg",
+  },
+  {
+    name: "Fast Typing",
+    image: "typing-writing-svgrepo-com.svg",
+  },
+  {
+    name: "Cloudinary",
+    image: "https://www.svgrepo.com/show/353566/cloudinary.svg",
+  },
+  {
+    name: "Leaflet.js",
+    image: "https://www.svgrepo.com/show/353991/leaflet.svg",
+  },
+  {
+    name: "YouTube's API",
+    image: "https://www.svgrepo.com/show/475700/youtube-color.svg",
+  },
+  {
+    name: "TV Maze's API",
+    image: "https://www.svgrepo.com/show/374216/api-opened.svg",
   },
 ];

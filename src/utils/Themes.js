@@ -1,5 +1,5 @@
 export const darkTheme = {
-    bg:"#1C1C27",
+    bg:"#080911",
     bgLight: "#1C1E27",
     primary:"hsl(210, 75%, 31%)",
     text_primary:"#F2F3F4",

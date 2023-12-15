@@ -59,10 +59,14 @@ const Tags = styled.div`
 const Tag = styled.span`
     font-size: 12px;
     font-weight: 400;
-    color: aqua;
+    color: ${({ theme }) => theme.text_secondary};
     background-color: ${({ theme }) => theme.primary + 15};
     padding: 2px 8px;
     border-radius: 10px;
+    border: 1px solid ${({ theme }) => theme.text_secondary};
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+    }
 `
 
 const Details = styled.div`
@@ -127,16 +131,16 @@ const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
             <Image src={project.image}/>
-            <Tags>
-                {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
-                ))}
-            </Tags>
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
+            <Tags>
+                {project.tags?.map((tag, index) => (
+                <Tag>{tag}</Tag>
+                ))}
+            </Tags>
             <Members>
                 {project.member?.map((member) => (
                     <Avatar src={member.img}/>

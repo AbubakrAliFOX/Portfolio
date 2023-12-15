@@ -1,7 +1,7 @@
 import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Container = styled.div`
 width: 100%;
@@ -95,14 +95,22 @@ const Tags = styled.div`
 
 const Tag = styled.div`
     font-size: 14px;
-    font-weight: 400;
-    color: aqua;
+    font-weight: 450;
     margin: 4px;
     padding: 4px 8px;
     border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary + 20};
+    color: ${({ theme }) => theme.text_secondary};
+    background-color: ${({ theme }) => theme.primary + 15};
+    border: 1px solid ${({ theme }) => theme.text_secondary};
+    transition: color 0.5s ease-in-out;
     @media only screen and (max-width: 600px) {
         font-size: 12px;
+    }
+    &:hover {
+        color: black;
+        background-color: white;
+        font-weight: 500;
+        cursor: pointer;
     }
 `;
 

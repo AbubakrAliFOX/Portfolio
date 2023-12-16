@@ -72,7 +72,10 @@ Here are some of the projects that I've worked on:
 - EJS
 - Bootstrap
 - Bulma
+- Chakra UI
+- Styled Componenets
 - RESTful APIs
+- Figma
 
 
 ## Languages
@@ -87,3 +90,6 @@ I'm always open to new opportunities and collaborations. If you'd like to get in
 
 Let's create something amazing together!
 
+- Email: AbubakrA.eldaw@gmail.com.
+- LinkedIn: [Abubakr Eldaw](https://www.linkedin.com/in/abubakr-eldaw/)
+- Portfolio: [Portfolio](https://portfolio-kfwr.onrender.com/)

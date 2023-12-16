@@ -16,6 +16,7 @@ const Container = styled.div`
   justify-content: center;
   overflow-y: scroll;
   transition: all 0.5s ease;
+  z-index: 10000000;
 `;
 
 const Wrapper = styled.div`

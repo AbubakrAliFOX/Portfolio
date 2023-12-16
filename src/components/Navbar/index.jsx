@@ -16,7 +16,7 @@ const Nav = styled.div`
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000 ;
     @media (max-width: 960px) {
         trastion: 0.8s all ease;
     }
@@ -152,13 +152,12 @@ const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
+    background: #171721;
     transition: all 0.6s ease-in-out;
     transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     opacity: ${({ open }) => (open ? '100%' : '0')};
-    z-index: ${({ open }) => (open ? '1000' : '-1000')};
 
 `
 

@@ -36,8 +36,8 @@ const Projects = ({openModal,setOpenModal}) => {
           }
         </ToggleButtonGroup> */}
         <CardContainer>
-          {projects.map((project) => (
-              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+          {projects.map((project,idx) => (
+              <ProjectCard key={idx} project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
 
         </CardContainer>

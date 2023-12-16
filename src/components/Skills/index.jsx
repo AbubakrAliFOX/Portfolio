@@ -103,12 +103,13 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: 0.2s ease-in-out;
+  transition: color 0.6s ease-in-out;
   &:hover {
     cursor: pointer;
     color: black;
     background-color: white;
   }
+  
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
@@ -132,11 +133,11 @@ const Skills = () => {
         <Title>Skills</Title>
         <SkillsContainer>
           {skills.map((skill) => (
-            <Skill>
+            <Skill key={skill.title}>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
                 {skill.skills.map((item) => (
-                  <SkillItem>
+                  <SkillItem key={item.name}>
                     <SkillImage src={item.image}/>
                     {item.name}
                   </SkillItem>

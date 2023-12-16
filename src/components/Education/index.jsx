@@ -85,7 +85,7 @@ const index = () => {
                 <TimelineSection>
                     <Timeline>
                         {education.map((education,index) => (
-                            <TimelineItem >
+                            <TimelineItem key={education.id}>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="primary" />
                                     {index !== experiences.length  && <TimelineConnector style={{ background: '#00000' }} />}

@@ -13,6 +13,9 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ProjectDetails from "./components/ProjectDetails";
 import { BrowserRouter as Router } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Body = styled.div`
   width: 100%;
@@ -82,6 +85,7 @@ function App() {
           )}
         </Body>
       </Router>
+      <ToastContainer />
     </ThemeProvider>
   );
 }

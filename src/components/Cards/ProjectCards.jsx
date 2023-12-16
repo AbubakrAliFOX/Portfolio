@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { SkillsList } from '../../data/constants'
 
 
 const Button = styled.button`
@@ -124,7 +125,22 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
+
+const TagImage = styled.img`
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+`;
+
 const ProjectCards = ({project,setOpenModal}) => {
+  const list = [];
+  for (let tag of project.tags) {
+    for (let skill of SkillsList){
+        if (skill.name == tag) {
+            list.push(skill);
+        }
+    }
+  }
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
             <Image src={project.image}/>
@@ -134,8 +150,8 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Description>{project.description}</Description>
             </Details>
             <Tags>
-                {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                {list.map((el, idx) => (
+                <TagImage key={`${el.name}${idx}`} src={el.image} />
                 ))}
             </Tags>
             <Members>

@@ -174,6 +174,9 @@ const Button = styled.a`
   text-align: center;
   font-size: 16px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: ${({ theme }) => theme.text_primary};
   padding: 12px 16px;
   border-radius: 8px;
@@ -198,9 +201,45 @@ const Button = styled.a`
   }
 `;
 
+const Figma = styled.a`
+  width: 10%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.text_primary};
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #0063ff;
+  ${({ dull, theme }) =>
+    dull &&
+    `
+        background-color: ${theme.bgLight};
+        color: ${theme.text_secondary};
+        &:hover {
+            background-color: ${({ theme }) => theme.bg + 99};
+        }
+    `}
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: ${({ theme }) => theme.primary + 99};
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+`;
+
+const FigmaImage = styled.img`
+  width: 24px;
+  height: 24px;
+`;
+
 const index = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
-  console.log(project,'Project');
   const list = [];
   for (let tag of project.tags) {
     for (let skill of SkillsList){
@@ -209,8 +248,6 @@ const index = ({ openModal, setOpenModal }) => {
         }
     }
   }
-  console.log(list);
-  console.log(project);
   return (
     <Modal
       open={true}
@@ -231,16 +268,8 @@ const index = ({ openModal, setOpenModal }) => {
           <Title>{project?.title}</Title>
           <Date>{project.date}</Date>
           <Tags>
-            {project?.tags.map((tag) => (
-              <Tag>
-                {/* <TagImage src={tag.image} /> */}
-                {tag}
-              </Tag>
-            ))}
-          </Tags>
-          <Tags>
           {list.map((el) => (
-              <Tag>
+              <Tag key={el.name}>
                 <TagImage src={el.image} />
                 {el.name}
               </Tag>
@@ -279,8 +308,11 @@ const index = ({ openModal, setOpenModal }) => {
               View Code
             </Button>
             <Button href={project?.webapp} target="new">
-              View Live App
+               Live App
             </Button>
+            <Figma href={project?.webapp} target="new">
+            <FigmaImage src="https://www.svgrepo.com/show/354987/figma.svg" />
+            </Figma>
           </ButtonGroup>
         </Wrapper>
       </Container>

@@ -43,6 +43,14 @@ export const skills = [
         name: "Bulma",
         image: "https://www.svgrepo.com/show/353527/bulma.svg",
       },
+      {
+        name: "Charkra UI",
+        image: "https://avatars.githubusercontent.com/u/54212428?s=200&v=4",
+      },
+      {
+        name: "Figma",
+        image: "https://www.svgrepo.com/show/354987/figma.svg",
+      },
     ],
   },
   {
@@ -132,12 +140,14 @@ export const experiences = [
       "JavaScript",
       "React",
       "Node.js",
-      "Express.jS",
+      "Express.js",
       "Mongo DB",
       "EJS",
       "Material UI",
       "Bulma",
+      "Charkra UI",
       "Bootstrap",
+      "Figma"
     ],
   },
   {
@@ -207,6 +217,27 @@ export const education = [
 
 export const projects = [
   {
+    id: 6,
+    title: "Little Lemon",
+    date: "13/12/2023",
+    description:
+    "Little Lemon is a full-stack MERN application designed for a seamless dining experience. Users can effortlessly explore a curated menu, place meal orders, make table reservations, and enjoy detailed insights into each menu item. The application prioritizes user authentication and authorization, ensuring a secure and personalized journey. Crafted with React, Node.js, MongoDB, and CSS, Little Lemon combines functionality with a delightful user interface.",
+    image: "Screenshot 2023-10-23 165628.webp",
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "CSS",
+      "Cloudinary",
+      "Figma",
+    ],
+    category: "Full Stack",
+    github: "https://github.com/AbubakrAliFOX/Little-Lemon",
+    webapp: "https://little-lemon-5au5.onrender.com/",
+    figma: 'https://github.com/AbubakrAliFOX/YelpCamp'
+  },
+  {
     id: 5,
     title: "YelpCamp",
     date: "",
@@ -225,7 +256,7 @@ export const projects = [
       "Leaflet.js",
       "Cloudinary",
     ],
-    category: "web app",
+    category: "Full Stack",
     github: "https://github.com/AbubakrAliFOX/YelpCamp",
     webapp: "https://yelpcamp-zynh.onrender.com",
   },
@@ -270,7 +301,7 @@ export const projects = [
     description:
       "Welcome to my portfolio! This digital space is a reflection of my journey as a web developer. I'm very passionate about making captivating web experiences and building projects.",
     image: "Portfolio.webp",
-    tags: ["React", "JavaScript", "Material UI", "HTML", "CSS"],
+    tags: ["React", "Material UI", "HTML", "CSS"],
     category: "Web",
     github: "https://github.com/AbubakrAliFOX/Portfolio",
     webapp: "https://portfolio-kfwr.onrender.com",
@@ -293,7 +324,7 @@ export const projects = [
     date: "",
     description: "A basic Todo List App to practice React and React State.",
     image: "Todo.webp",
-    tags: ["React", "JavaScript", "Material UI", "CSS"],
+    tags: ["React", "Material UI", "CSS"],
     category: "Web",
     github: "https://github.com/AbubakrAliFOX/React-Todo-List-",
     webapp: "https://todolist-m5au.onrender.com/",
@@ -402,5 +433,13 @@ export const SkillsList = [
   {
     name: "TV Maze's API",
     image: "https://www.svgrepo.com/show/374216/api-opened.svg",
+  },
+  {
+    name: "Charkra UI",
+    image: "https://avatars.githubusercontent.com/u/54212428?s=200&v=4",
+  },
+  {
+    name: "Figma",
+    image: "https://www.svgrepo.com/show/354987/figma.svg",
   },
 ];

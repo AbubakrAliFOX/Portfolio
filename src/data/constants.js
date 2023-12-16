@@ -48,6 +48,10 @@ export const skills = [
         image: "https://avatars.githubusercontent.com/u/54212428?s=200&v=4",
       },
       {
+        name: "Styled Components",
+        image: "https://www.styled-components.com/atom.png",
+      },
+      {
         name: "Figma",
         image: "https://www.svgrepo.com/show/354987/figma.svg",
       },
@@ -222,7 +226,7 @@ export const projects = [
     date: "",
     description:
     "Little Lemon is a full-stack MERN application designed for a seamless dining experience. Users can effortlessly explore a curated menu, place meal orders, make table reservations, and enjoy detailed insights into each menu item. The application prioritizes user authentication and authorization, ensuring a secure and personalized journey. Crafted with React, Node.js, MongoDB, and CSS, Little Lemon combines functionality with a delightful user interface.",
-    image: "Screenshot 2023-10-23 165628.webp",
+    image: "Little-Lemon.webp",
     tags: [
       "React",
       "HTML",
@@ -244,7 +248,7 @@ export const projects = [
     date: "",
     description:
     "A simple Rock, Paper, Scissors game built using React and styled with Chakra UI.",
-    image: "Screenshot 2023-10-23 165628.webp",
+    image: "rock.webp",
     tags: [
       "React",
       "Chakra UI",
@@ -319,7 +323,7 @@ export const projects = [
     description:
       "Welcome to my portfolio! This digital space is a reflection of my journey as a web developer. I'm very passionate about making captivating web experiences and building projects.",
     image: "Portfolio.webp",
-    tags: ["React", "Material UI", "HTML", "CSS"],
+    tags: ["React", "Material UI", 'Styled Components', "HTML", "CSS"],
     category: "Web",
     github: "https://github.com/AbubakrAliFOX/Portfolio",
     webapp: "https://portfolio-kfwr.onrender.com",
@@ -459,5 +463,9 @@ export const SkillsList = [
   {
     name: "Figma",
     image: "https://www.svgrepo.com/show/354987/figma.svg",
+  },
+  {
+    name: "Styled Components",
+    image: "https://www.styled-components.com/atom.png",
   },
 ];

@@ -44,7 +44,7 @@ export const skills = [
         image: "https://www.svgrepo.com/show/353527/bulma.svg",
       },
       {
-        name: "Charkra UI",
+        name: "Chakra UI",
         image: "https://avatars.githubusercontent.com/u/54212428?s=200&v=4",
       },
       {
@@ -145,7 +145,7 @@ export const experiences = [
       "EJS",
       "Material UI",
       "Bulma",
-      "Charkra UI",
+      "Chakra UI",
       "Bootstrap",
       "Figma"
     ],
@@ -217,27 +217,45 @@ export const education = [
 
 export const projects = [
   {
-    id: 6,
+    id: 7,
     title: "Little Lemon",
-    date: "13/12/2023",
+    date: "",
     description:
     "Little Lemon is a full-stack MERN application designed for a seamless dining experience. Users can effortlessly explore a curated menu, place meal orders, make table reservations, and enjoy detailed insights into each menu item. The application prioritizes user authentication and authorization, ensuring a secure and personalized journey. Crafted with React, Node.js, MongoDB, and CSS, Little Lemon combines functionality with a delightful user interface.",
     image: "Screenshot 2023-10-23 165628.webp",
     tags: [
       "React",
+      "HTML",
+      "CSS",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "CSS",
       "Cloudinary",
       "Figma",
     ],
     category: "Full Stack",
     github: "https://github.com/AbubakrAliFOX/Little-Lemon",
     webapp: "https://little-lemon-5au5.onrender.com/",
-    figma: 'https://github.com/AbubakrAliFOX/YelpCamp'
+    figma: 'https://www.figma.com/file/Fseep3IOhSPoBjiCKTD032/Little-Lemon?type=design&node-id=0%3A1&mode=design&t=oxu7hd0GK6tNUdNV-1'
   },
   {
+    id: 6,
+    title: "Rock Paper Scissors Game",
+    date: "",
+    description:
+    "A simple Rock, Paper, Scissors game built using React and styled with Chakra UI.",
+    image: "Screenshot 2023-10-23 165628.webp",
+    tags: [
+      "React",
+      "Chakra UI",
+      "HTML",
+      "CSS",
+    ],
+    category: "Game",
+    github: "https://github.com/AbubakrAliFOX/Rock-Paper-Scissors",
+    webapp: "https://rock-paper-scissors-jezh.onrender.com/",
+  },
+  { 
     id: 5,
     title: "YelpCamp",
     date: "",
@@ -435,7 +453,7 @@ export const SkillsList = [
     image: "https://www.svgrepo.com/show/374216/api-opened.svg",
   },
   {
-    name: "Charkra UI",
+    name: "Chakra UI",
     image: "https://avatars.githubusercontent.com/u/54212428?s=200&v=4",
   },
   {

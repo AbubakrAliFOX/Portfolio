@@ -242,10 +242,10 @@ const index = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
   const list = [];
   for (let tag of project.tags) {
-    for (let skill of SkillsList){
-        if (skill.name == tag) {
-            list.push(skill);
-        }
+    for (let skill of SkillsList) {
+      if (skill.name == tag) {
+        list.push(skill);
+      }
     }
   }
   return (
@@ -268,7 +268,7 @@ const index = ({ openModal, setOpenModal }) => {
           <Title>{project?.title}</Title>
           <Date>{project.date}</Date>
           <Tags>
-          {list.map((el) => (
+            {list.map((el) => (
               <Tag key={el.name}>
                 <TagImage src={el.image} />
                 {el.name}
@@ -308,11 +308,13 @@ const index = ({ openModal, setOpenModal }) => {
               View Code
             </Button>
             <Button href={project?.webapp} target="new">
-               Live App
+              Live App
             </Button>
-            <Figma href={project?.webapp} target="new">
-            <FigmaImage src="https://www.svgrepo.com/show/354987/figma.svg" />
-            </Figma>
+            {project?.figma && (
+              <Figma href={project?.figma} target="new">
+                <FigmaImage src="https://www.svgrepo.com/show/354987/figma.svg" />
+              </Figma>
+            )}
           </ButtonGroup>
         </Wrapper>
       </Container>

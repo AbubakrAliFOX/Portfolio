@@ -18,32 +18,43 @@ This repository serves as a showcase of my work and projects, where you can expl
 
 Here are some of the projects that I've worked on:
 
-1. **YelpCamp**
+1. **Little Lemon**
+   - **Description:** An restaurant app where you can order directly from the menu and make reservations.
+   - **Repository:** [Link to GitHub repository for Little Lemon](https://github.com/AbubakrAliFOX/Little-Lemon)
+   - **Demo:** [https://little-lemon-5au5.onrender.com/](https://little-lemon-5au5.onrender.com//)
+
+2. **Rock Paper Scissors Game**
+   - **Description:** A simple rock paper scissors game.
+   - **Repository:** [Link to GitHub repository for Rock Paper Scissors Game](https://github.com/AbubakrAliFOX/Rock-Paper-Scissors)
+   - **Demo:** [https://rock-paper-scissors-jezh.onrender.com/](https://rock-paper-scissors-jezh.onrender.com//)
+
+
+3. **YelpCamp**
    - **Description:** A web application for discovering and reviewing campgrounds.
    - **Repository:** [Link to GitHub repository for YelpCamp](https://github.com/AbubakrAliFOX/YelpCamp)
    - **Demo:** [https://yelpcamp-zynh.onrender.com](https://yelpcamp-zynh.onrender.com/)
 
-2. **TV Scout**
+4. **TV Scout**
    - **Description:** An app for tracking and discovering TV shows and episodes.
    - **Repository:** [Link to GitHub repository for TV Scout](https://github.com/AbubakrAliFOX/TV-Scout)
    - **Demo:** [https://tv-scout.onrender.com](https://tv-scout.onrender.com/)
 
-3. **RGB Color Game**
+5. **RGB Color Game**
    - **Description:** A fun color guessing game that helps improve your RGB color skills.
    - **Repository:** [Link to GitHub repository for RGB Color Game](https://github.com/AbubakrAliFOX/ColorsGame)
    - **Demo:** [https://colorgame-6dia.onrender.com](https://colorgame-6dia.onrender.com)
 
-4. **ScoreKeeper**
+6. **ScoreKeeper**
    - **Description:** A simple web app for keeping score in various games and activities.
    - **Repository:** [Link to GitHub repository for ScoreKeeper](https://github.com/AbubakrAliFOX/Score-Keeper)
    - **Demo:** [https://score-keeper-0quo.onrender.com](https://score-keeper-0quo.onrender.com)
 
-5. **Portfolio**
+7. **Portfolio**
    - **Description:** My personal portfolio website showcasing my projects and skills.
    - **Repository:** [Link to GitHub repository for your portfolio](https://github.com/AbubakrAliFOX/Portfolio)
    - **Demo:** [https://portfolio-kfwr.onrender.com/](https://portfolio-kfwr.onrender.com/)
 
-6. **React Todolist**
+8. **React Todolist**
    - **Description:** A to-do list application built with React to help you stay organized.
    - **Repository:** [Link to GitHub repository for React Todolist](https://github.com/AbubakrAliFOX/React-Todo-List-)
    - **Demo:** [https://todolist-m5au.onrender.com](https://todolist-m5au.onrender.com)

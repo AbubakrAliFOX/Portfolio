@@ -65,6 +65,8 @@ Here are some of the projects that I've worked on:
 - HTML
 - CSS
 - JavaScript
+- C
+- C++
 - React
 - Node.js
 - Express.js

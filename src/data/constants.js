@@ -1,10 +1,10 @@
 export const Bio = {
   name: "Abubakr Eldaw",
-  roles: ["Front End Developer", "Programmer", "German Teacher"],
+  roles: ["Full Stack Developer", "Programmer", "German Teacher"],
   description:
     "With a keyboard as my paintbrush, I create user-centric experiences, one line of code at a time. I'm on a mission to bridge innovation and creativity, one project at a time. Welcome to my world of code, design, and possibilities.",
   github: "https://github.com/AbubakrAliFOX",
-  resume: "/",
+  resume: "https://drive.google.com/file/d/1m8psU5NFThm9-3I-8TIiuMjLBtsfxja3/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/abubakr-eldaw/",
   facebook: "https://www.facebook.com/profile.php?id=61550096896475",
 };
@@ -83,8 +83,16 @@ export const skills = [
     ],
   },
   {
-    title: "Development Utilities",
+    title: "General",
     skills: [
+      {
+        name: "C",
+        image: "https://cdn.worldvectorlogo.com/logos/c-1.svg",
+      },
+      {
+        name: "C++",
+        image: "https://cdn.worldvectorlogo.com/logos/c.svg",
+      },
       {
         name: "Git",
         image: "https://www.svgrepo.com/show/452210/git.svg",
@@ -94,8 +102,17 @@ export const skills = [
         image: "https://www.svgrepo.com/show/439171/github.svg",
       },
       {
+        name: "Jest",
+        image:
+          "jest-svgrepo-com.svg",
+      },
+      {
         name: "Postman",
         image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
+      },
+      {
+        name: "MatLab",
+        image: "matlab-svgrepo-com.svg",
       },
     ],
   },
@@ -133,15 +150,16 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "301661089_452377770263226_5391511322709521003_n.webp",
-    role: "Frontend Developer",
+    img: "attachment_28801044.webp",
+    role: "Full-Stack Developer",
     company: "",
     date: "Oct 2023 - Present",
-    desc: "Aspiring to be a Front-End Web Developer, I am passionate about crafting user-friendly web interfaces. Proficient in HTML, CSS, and JavaScript, ReactJS, Node.jS and much more.I'm eager to apply my skills and collaborate on projects that create seamless and captivating online experiences.",
+    desc: "Aspiring to be a Full-Stack Web Developer, I am passionate about crafting user-friendly web interfaces. Proficient in HTML, CSS, and JavaScript, ReactJS, Node.jS and much more. I'm eager to apply my skills and collaborate on projects that create seamless and captivating online experiences.",
     skills: [
       "HTML",
       "CSS",
       "JavaScript",
+      "Jest",
       "React",
       "Node.js",
       "Express.js",

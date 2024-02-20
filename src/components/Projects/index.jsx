@@ -1,11 +1,21 @@
-import React from 'react'
-import { useState } from 'react'
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
-import ProjectCard from '../Cards/ProjectCards'
-import { projects } from '../../data/constants'
+import React from "react";
+import { useState } from "react";
+import {
+  Container,
+  Wrapper,
+  Title,
+  Desc,
+  CardContainer,
+  ToggleButtonGroup,
+  ToggleButton,
+  Divider,
+} from "./ProjectsStyle";
+import ProjectCard from "../Cards/ProjectCards";
+import { projects } from "../../data/constants";
 
+const reversedProjects = projects.reverse();
 
-const Projects = ({openModal,setOpenModal}) => {
+const Projects = ({ openModal, setOpenModal }) => {
   return (
     <Container id="projects">
       <Wrapper>
@@ -36,14 +46,18 @@ const Projects = ({openModal,setOpenModal}) => {
           }
         </ToggleButtonGroup> */}
         <CardContainer>
-          {projects.map((project,idx) => (
-              <ProjectCard key={idx} project={project} openModal={openModal} setOpenModal={setOpenModal}/>
-            ))}
-
+          {reversedProjects.map((project, idx) => (
+            <ProjectCard
+              key={idx}
+              project={project}
+              openModal={openModal}
+              setOpenModal={setOpenModal}
+            />
+          ))}
         </CardContainer>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

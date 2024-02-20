@@ -67,92 +67,92 @@ export const SkillsList = [
   {
     name: "Node.js",
     image: "https://www.svgrepo.com/show/452075/node-js.svg",
-    category: "Backend"
+    category: "Backend",
   },
   {
     name: "Express.js",
     image: "express-svgrepo-com.svg",
-    category: "Backend"
+    category: "Backend",
   },
   {
     name: "MongoDB",
     image: "https://www.svgrepo.com/show/331488/mongodb.svg",
-    category: "Backend"
+    category: "Backend",
   },
   {
     name: "EJS",
     image: "https://www.svgrepo.com/show/373574/ejs.svg",
-    category: "Backend"
+    category: "Backend",
   },
   {
     name: "REST API",
     image: "api-app-svgrepo-com.svg",
-    category: "Backend"
+    category: "Backend",
   },
   {
     name: "C",
     image: "https://cdn.worldvectorlogo.com/logos/c-1.svg",
-    category: "General"
+    category: "General",
   },
   {
     name: "C++",
     image: "https://cdn.worldvectorlogo.com/logos/c.svg",
-    category: "General"
+    category: "General",
   },
   {
     name: "Git",
     image: "https://www.svgrepo.com/show/452210/git.svg",
-    category: "General"
+    category: "General",
   },
   {
     name: "GitHub",
     image: "https://www.svgrepo.com/show/439171/github.svg",
-    category: "General"
+    category: "General",
   },
   {
     name: "Postman",
     image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
-    category: "General"
+    category: "General",
   },
   {
     name: "Jest",
     image: "jest-svgrepo-com.svg",
-    category: "General"
+    category: "General",
   },
   {
     name: "MatLab",
     image: "matlab-svgrepo-com.svg",
-    category: "General"
+    category: "General",
   },
   {
     name: "English",
     image: "https://hatscripts.github.io/circle-flags/flags/gb.svg",
-    category: "Additional"
+    category: "Additional",
   },
   {
     name: "German",
     image: "https://hatscripts.github.io/circle-flags/flags/de.svg",
-    category: "Additional"
+    category: "Additional",
   },
   {
     name: "Excel",
     image: "https://www.svgrepo.com/show/373589/excel.svg",
-    category: "Additional"
+    category: "Additional",
   },
   {
     name: "PowerPoint",
     image: "https://www.svgrepo.com/show/373989/powerpoint.svg",
-    category: "Additional"
+    category: "Additional",
   },
   {
     name: "Word",
     image: "https://www.svgrepo.com/show/374187/word.svg",
-    category: "Additional"
+    category: "Additional",
   },
   {
     name: "Fast Typing",
     image: "typing-writing-svgrepo-com.svg",
-    category: "Additional"
+    category: "Additional",
   },
   {
     name: "Cloudinary",
@@ -283,39 +283,73 @@ export const education = [
 
 export const projects = [
   {
-    id: 7,
-    title: "Little Lemon",
+    id: 0,
+    title: "Todo List",
     date: "",
-    description:
-      "Little Lemon is a full-stack MERN application designed for a seamless dining experience. Users can effortlessly explore a curated menu, place meal orders, make table reservations, and enjoy detailed insights into each menu item. The application prioritizes user authentication and authorization, ensuring a secure and personalized journey. Crafted with React, Node.js, MongoDB, and CSS, Little Lemon combines functionality with a delightful user interface.",
-    image: "Little-Lemon.webp",
-    tags: [
-      "React",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Cloudinary",
-      "Figma",
-    ],
-    category: "Full Stack",
-    github: "https://github.com/AbubakrAliFOX/Little-Lemon",
-    webapp: "https://little-lemon-5au5.onrender.com/",
-    figma:
-      "https://www.figma.com/file/Fseep3IOhSPoBjiCKTD032/Little-Lemon?type=design&node-id=0%3A1&mode=design&t=oxu7hd0GK6tNUdNV-1",
+    description: "A basic Todo List App to practice React and React State.",
+    image: "Todo.webp",
+    tags: ["React", "Material UI", "CSS"],
+    category: "Web",
+    github: "https://github.com/AbubakrAliFOX/React-Todo-List-",
+    webapp: "https://todolist-m5au.onrender.com/",
   },
   {
-    id: 6,
-    title: "Rock Paper Scissors Game",
+    id: 1,
+    title: "RGB Color Game",
     date: "",
     description:
-      "A simple Rock, Paper, Scissors game built using React and styled with Chakra UI.",
-    image: "rock.webp",
-    tags: ["React", "Chakra UI", "HTML", "CSS"],
-    category: "Game",
-    github: "https://github.com/AbubakrAliFOX/Rock-Paper-Scissors",
-    webapp: "https://rock-paper-scissors-jezh.onrender.com/",
+      "Dive into the world of colors with my RGB Colors Game! Challenge your color recognition skills as you're presented with six options to match the hidden RGB color code. Test your eye for detail and see how fast you can identify the correct color. A delightful and interactive way to explore the beauty of RGB colors while having some fun. Ready to put your color skills to the test?",
+    image: "ColorGame.gif",
+    tags: ["JavaScript", "HTML", "CSS", "Bootstrap"],
+    category: "Web",
+    github: "https://github.com/AbubakrAliFOX/ColorsGame",
+    webapp: "https://colorgame-6dia.onrender.com",
+  },
+  {
+    id: 2,
+    title: "My Portfolio",
+    date: "",
+    description:
+      "Welcome to my portfolio! This digital space is a reflection of my journey as a web developer. I'm very passionate about making captivating web experiences and building projects.",
+    image: "Portfolio.webp",
+    tags: ["React", "Material UI", "Styled Components", "HTML", "CSS"],
+    category: "Web",
+    github: "https://github.com/AbubakrAliFOX/Portfolio",
+    webapp: "https://portfolio-kfwr.onrender.com",
+  },
+  {
+    id: 3,
+    title: "ScoreKeeper",
+    date: "",
+    description:
+      "The Score-Keeper app is a simple JavaScript application that helps you keep track of scores in games like ping pong, tennis, or any other sport or activity where you need to record and display scores for two players or teams.",
+    image: "ScoreKeeper.webp",
+    tags: ["JavaScript", "HTML", "CSS", "Bootstrap"],
+    category: "web app",
+    github: "https://github.com/AbubakrAliFOX/Score-Keeper",
+    webapp: "https://score-keeper-0quo.onrender.com",
+  },
+  {
+    id: 4,
+    title: "TV Scout",
+    date: "",
+    description:
+      "TV Scout is a dynamic web application that empowers users to explore and discover their favorite TV shows effortlessly. With an intuitive interface and a wealth of features, TV Scout is your ideal companion for TV show enthusiasts. Whether you're seeking the latest episodes, browsing through a vast catalog, or simply exploring show details, TV Scout has you covered.",
+    image: "TV.webp",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "JavaScript",
+      "EJS",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "YouTube's API",
+      "TV Maze's API",
+    ],
+    category: "Web",
+    github: "https://github.com/AbubakrAliFOX/TV-Scout",
+    webapp: "https://tv-scout.onrender.com",
   },
   {
     id: 5,
@@ -341,74 +375,38 @@ export const projects = [
     webapp: "https://yelpcamp-zynh.onrender.com",
   },
   {
-    id: 4,
-    title: "TV Scout",
+    id: 6,
+    title: "Rock Paper Scissors Game",
     date: "",
     description:
-      "TV Scout is a dynamic web application that empowers users to explore and discover their favorite TV shows effortlessly. With an intuitive interface and a wealth of features, TV Scout is your ideal companion for TV show enthusiasts. Whether you're seeking the latest episodes, browsing through a vast catalog, or simply exploring show details, TV Scout has you covered.",
-    image: "TV.webp",
+      "A simple Rock, Paper, Scissors game built using React and styled with Chakra UI.",
+    image: "rock.webp",
+    tags: ["React", "Chakra UI", "HTML", "CSS"],
+    category: "Game",
+    github: "https://github.com/AbubakrAliFOX/Rock-Paper-Scissors",
+    webapp: "https://rock-paper-scissors-jezh.onrender.com/",
+  },
+  {
+    id: 7,
+    title: "Little Lemon",
+    date: "",
+    description:
+      "Little Lemon is a full-stack MERN application designed for a seamless dining experience. Users can effortlessly explore a curated menu, place meal orders, make table reservations, and enjoy detailed insights into each menu item. The application prioritizes user authentication and authorization, ensuring a secure and personalized journey. Crafted with React, Node.js, MongoDB, and CSS, Little Lemon combines functionality with a delightful user interface.",
+    image: "Little-Lemon.webp",
     tags: [
-      "Node.js",
-      "Express.js",
-      "JavaScript",
-      "EJS",
+      "React",
       "HTML",
       "CSS",
-      "Bootstrap",
-      "YouTube's API",
-      "TV Maze's API",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Cloudinary",
+      "Figma",
     ],
-    category: "Web",
-    github: "https://github.com/AbubakrAliFOX/TV-Scout",
-    webapp: "https://tv-scout.onrender.com",
-  },
-  {
-    id: 3,
-    title: "ScoreKeeper",
-    date: "",
-    description:
-      "The Score-Keeper app is a simple JavaScript application that helps you keep track of scores in games like ping pong, tennis, or any other sport or activity where you need to record and display scores for two players or teams.",
-    image: "ScoreKeeper.webp",
-    tags: ["JavaScript", "HTML", "CSS", "Bootstrap"],
-    category: "web app",
-    github: "https://github.com/AbubakrAliFOX/Score-Keeper",
-    webapp: "https://score-keeper-0quo.onrender.com",
-  },
-  {
-    id: 2,
-    title: "My Portfolio",
-    date: "",
-    description:
-      "Welcome to my portfolio! This digital space is a reflection of my journey as a web developer. I'm very passionate about making captivating web experiences and building projects.",
-    image: "Portfolio.webp",
-    tags: ["React", "Material UI", "Styled Components", "HTML", "CSS"],
-    category: "Web",
-    github: "https://github.com/AbubakrAliFOX/Portfolio",
-    webapp: "https://portfolio-kfwr.onrender.com",
-  },
-  {
-    id: 1,
-    title: "RGB Color Game",
-    date: "",
-    description:
-      "Dive into the world of colors with my RGB Colors Game! Challenge your color recognition skills as you're presented with six options to match the hidden RGB color code. Test your eye for detail and see how fast you can identify the correct color. A delightful and interactive way to explore the beauty of RGB colors while having some fun. Ready to put your color skills to the test?",
-    image: "ColorGame.gif",
-    tags: ["JavaScript", "HTML", "CSS", "Bootstrap"],
-    category: "Web",
-    github: "https://github.com/AbubakrAliFOX/ColorsGame",
-    webapp: "https://colorgame-6dia.onrender.com",
-  },
-  {
-    id: 0,
-    title: "Todo List",
-    date: "",
-    description: "A basic Todo List App to practice React and React State.",
-    image: "Todo.webp",
-    tags: ["React", "Material UI", "CSS"],
-    category: "Web",
-    github: "https://github.com/AbubakrAliFOX/React-Todo-List-",
-    webapp: "https://todolist-m5au.onrender.com/",
+    category: "Full Stack",
+    github: "https://github.com/AbubakrAliFOX/Little-Lemon",
+    webapp: "https://little-lemon-5au5.onrender.com/",
+    figma:
+      "https://www.figma.com/file/Fseep3IOhSPoBjiCKTD032/Little-Lemon?type=design&node-id=0%3A1&mode=design&t=oxu7hd0GK6tNUdNV-1",
   },
 ];
-
-console.log(skills[0].skills);

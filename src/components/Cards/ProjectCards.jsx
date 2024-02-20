@@ -133,14 +133,7 @@ const TagImage = styled.img`
 `;
 
 const ProjectCards = ({project,setOpenModal}) => {
-  const list = [];
-  for (let tag of project.tags) {
-    for (let skill of SkillsList){
-        if (skill.name == tag) {
-            list.push(skill);
-        }
-    }
-  }
+  const list = SkillsList.filter(skill => project.tags.includes(skill.name));
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
             <Image src={project.image}/>

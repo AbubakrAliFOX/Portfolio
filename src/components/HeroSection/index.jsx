@@ -1,8 +1,10 @@
+import "./style.css";
 import React from "react";
 import styled from "styled-components";
-import {Bio} from '../../data/constants';
+import { rotation } from "./keyframes";
+import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from '../../images/IMG_1277-PhotoRoom.png-PhotoRoom1.png'
+import HeroImg from "../../images/IMG_1277-PhotoRoom.png-PhotoRoom1.png";
 import HeroBgAnimation from "../HeroBgAnimation";
 
 const HeroContainer = styled.div`
@@ -131,7 +133,7 @@ const TextLoop = styled.div`
 `;
 
 const Span = styled.span`
-  color: rgba(0,99,255,1);
+  color: rgba(0, 99, 255, 1);
   cursor: pointer;
 `;
 
@@ -152,37 +154,63 @@ const SubTitle = styled.div`
 `;
 
 const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: rgba(0,99,255,1);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  padding: 16px 0;
+  color: ${({ theme }) => theme.white};
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
+  
+  background: ${({ theme }) => theme.card_light};
+  /* border: 2px solid white; */
+  position: relative;
+  &:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
 
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    inset: -0.25rem;
+    background: linear-gradient(
+      var(--gradient-angle),
+      var(--clr-1),
+      var(--clr-2),
+      var(--clr-3)
+    );
+    border-radius: inherit;
+    animation: ${rotation} 3.5s linear infinite;
+    z-index: -1;
+  }
+
+  &:after {
+    filter: blur(3.5rem);
+  }
+  &:hover:after {
+    filter: blur(1rem);
+  }
+
+  &:hover:before,
+  &:hover:after {
+    inset: -0.35rem;
+    transition: all 0.3s ease-out;
+
+  }
+
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
 `;
 
 const Image = styled.img`
@@ -194,7 +222,7 @@ const Image = styled.img`
     max-width: 400px;
     object-fit: cover;
     object-position: center;
-    border: 5px solid ${({theme}) => theme.primary};
+    border: 5px solid ${({ theme }) => theme.primary};
 
     @media (max-width: 768px) {
         max-width: 400px;
@@ -206,42 +234,45 @@ const Image = styled.img`
         max-width: 280px;
     }
 
-`
+`;
 
 const Hero = () => {
-    return (
-        <div id="about">
-            <HeroContainer>
-                <HeroBg>
-                    <HeroBgAnimation>
-
-                    </HeroBgAnimation>
-                </HeroBg>
-                <HeroInnerContainer>
-                    <HeroLeftContainer>
-                        <Title>Hello, I am <br/>{Bio.name}</Title>
-                        <TextLoop>
-                            I am a
-                            <Span>
-                                <Typewriter
-                                    options={{
-                                        strings: Bio.roles,
-                                        autoStart: true,
-                                        loop: true,
-                                    }}
-                                />
-                            </Span>
-                        </TextLoop>
-                    <SubTitle>{Bio.description}</SubTitle>
-                    <ResumeButton href={Bio.resume} target="_blank">My CV</ResumeButton>
-                    </HeroLeftContainer>
-                    <HeroRightContainer>
-                        <Image src={HeroImg} alt="Hero"></Image>
-                    </HeroRightContainer>
-                </HeroInnerContainer>
-            </HeroContainer>
-        </div>
-    )
-}
+  return (
+    <div id="about">
+      <HeroContainer>
+        <HeroBg>
+          <HeroBgAnimation></HeroBgAnimation>
+        </HeroBg>
+        <HeroInnerContainer>
+          <HeroLeftContainer>
+            <Title>
+              Hello, I am <br />
+              {Bio.name}
+            </Title>
+            <TextLoop>
+              I am a
+              <Span>
+                <Typewriter
+                  options={{
+                    strings: Bio.roles,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </Span>
+            </TextLoop>
+            <SubTitle>{Bio.description}</SubTitle>
+            <ResumeButton href={Bio.resume} target="_blank">
+              My CV
+            </ResumeButton>
+          </HeroLeftContainer>
+          <HeroRightContainer>
+            <Image src={HeroImg} alt="Hero"></Image>
+          </HeroRightContainer>
+        </HeroInnerContainer>
+      </HeroContainer>
+    </div>
+  );
+};
 
 export default Hero;

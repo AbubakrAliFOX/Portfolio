@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Bio } from "../../data/constants";
@@ -96,6 +96,9 @@ function Footer() {
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedInIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.whatsapp} target="display">
+            <WhatsAppIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>&copy; 2023 Abubakr Eldaw. All rights reserved.</Copyright>

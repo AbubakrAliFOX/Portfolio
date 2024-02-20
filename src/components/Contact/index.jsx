@@ -10,7 +10,6 @@ const serviceID = import.meta.env.VITE_SERVICE_ID;
 const templateID = import.meta.env.VITE_TEMPLATE_ID;
 const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
-
 import {
   Container,
   Wrapper,

@@ -7,6 +7,7 @@ export const Bio = {
   resume: "https://drive.google.com/file/d/1m8psU5NFThm9-3I-8TIiuMjLBtsfxja3/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/abubakr-eldaw/",
   facebook: "https://www.facebook.com/profile.php?id=61550096896475",
+  whatsapp: "https://wa.me/966537902993",
 };
 
 export const skills = [

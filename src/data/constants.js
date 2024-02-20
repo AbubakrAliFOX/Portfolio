@@ -4,147 +4,190 @@ export const Bio = {
   description:
     "With a keyboard as my paintbrush, I create user-centric experiences, one line of code at a time. I'm on a mission to bridge innovation and creativity, one project at a time. Welcome to my world of code, design, and possibilities.",
   github: "https://github.com/AbubakrAliFOX",
-  resume: "https://drive.google.com/file/d/1m8psU5NFThm9-3I-8TIiuMjLBtsfxja3/view?usp=drive_link",
+  resume:
+    "https://drive.google.com/file/d/1m8psU5NFThm9-3I-8TIiuMjLBtsfxja3/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/abubakr-eldaw/",
   facebook: "https://www.facebook.com/profile.php?id=61550096896475",
   whatsapp: "https://wa.me/966537902993",
 };
 
+export const SkillsList = [
+  {
+    name: "HTML",
+    image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+    category: "Frontend",
+  },
+  {
+    name: "CSS",
+    image: "https://www.svgrepo.com/show/349330/css3.svg",
+    category: "Frontend",
+  },
+  {
+    name: "JavaScript",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+    category: "Frontend",
+  },
+  {
+    name: "React",
+    image:
+      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+    category: "Frontend",
+  },
+  {
+    name: "Material UI",
+    image: "https://www.svgrepo.com/show/354048/material-ui.svg",
+    category: "Frontend",
+  },
+  {
+    name: "Bootstrap",
+    image: "https://www.svgrepo.com/show/353498/bootstrap.svg",
+    category: "Frontend",
+  },
+  {
+    name: "Bulma",
+    image: "https://www.svgrepo.com/show/353527/bulma.svg",
+    category: "Frontend",
+  },
+  {
+    name: "Chakra UI",
+    image: "https://avatars.githubusercontent.com/u/54212428?s=200&v=4",
+    category: "Frontend",
+  },
+  {
+    name: "Styled Components",
+    image: "https://www.styled-components.com/atom.png",
+    category: "Frontend",
+  },
+  {
+    name: "Figma",
+    image: "https://www.svgrepo.com/show/354987/figma.svg",
+    category: "Frontend",
+  },
+  {
+    name: "Node.js",
+    image: "https://www.svgrepo.com/show/452075/node-js.svg",
+    category: "Backend"
+  },
+  {
+    name: "Express.js",
+    image: "express-svgrepo-com.svg",
+    category: "Backend"
+  },
+  {
+    name: "MongoDB",
+    image: "https://www.svgrepo.com/show/331488/mongodb.svg",
+    category: "Backend"
+  },
+  {
+    name: "EJS",
+    image: "https://www.svgrepo.com/show/373574/ejs.svg",
+    category: "Backend"
+  },
+  {
+    name: "REST API",
+    image: "api-app-svgrepo-com.svg",
+    category: "Backend"
+  },
+  {
+    name: "C",
+    image: "https://cdn.worldvectorlogo.com/logos/c-1.svg",
+    category: "General"
+  },
+  {
+    name: "C++",
+    image: "https://cdn.worldvectorlogo.com/logos/c.svg",
+    category: "General"
+  },
+  {
+    name: "Git",
+    image: "https://www.svgrepo.com/show/452210/git.svg",
+    category: "General"
+  },
+  {
+    name: "GitHub",
+    image: "https://www.svgrepo.com/show/439171/github.svg",
+    category: "General"
+  },
+  {
+    name: "Postman",
+    image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
+    category: "General"
+  },
+  {
+    name: "Jest",
+    image: "jest-svgrepo-com.svg",
+    category: "General"
+  },
+  {
+    name: "MatLab",
+    image: "matlab-svgrepo-com.svg",
+    category: "General"
+  },
+  {
+    name: "English",
+    image: "https://hatscripts.github.io/circle-flags/flags/gb.svg",
+    category: "Additional"
+  },
+  {
+    name: "German",
+    image: "https://hatscripts.github.io/circle-flags/flags/de.svg",
+    category: "Additional"
+  },
+  {
+    name: "Excel",
+    image: "https://www.svgrepo.com/show/373589/excel.svg",
+    category: "Additional"
+  },
+  {
+    name: "PowerPoint",
+    image: "https://www.svgrepo.com/show/373989/powerpoint.svg",
+    category: "Additional"
+  },
+  {
+    name: "Word",
+    image: "https://www.svgrepo.com/show/374187/word.svg",
+    category: "Additional"
+  },
+  {
+    name: "Fast Typing",
+    image: "typing-writing-svgrepo-com.svg",
+    category: "Additional"
+  },
+  {
+    name: "Cloudinary",
+    image: "https://www.svgrepo.com/show/353566/cloudinary.svg",
+  },
+  {
+    name: "Leaflet.js",
+    image: "https://www.svgrepo.com/show/353991/leaflet.svg",
+  },
+  {
+    name: "YouTube's API",
+    image: "https://www.svgrepo.com/show/475700/youtube-color.svg",
+  },
+  {
+    name: "TV Maze's API",
+    image: "https://www.svgrepo.com/show/374216/api-opened.svg",
+  },
+];
+
 export const skills = [
   {
     title: "Frontend",
-    skills: [
-      {
-        name: "HTML",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
-      },
-      {
-        name: "CSS",
-        image: "https://www.svgrepo.com/show/349330/css3.svg",
-      },
-      {
-        name: "JavaScript",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-      },
-      {
-        name: "React",
-        image:
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
-      },
-      {
-        name: "Material UI",
-        image: "https://www.svgrepo.com/show/354048/material-ui.svg",
-      },
-      {
-        name: "Bootstrap",
-        image: "https://www.svgrepo.com/show/353498/bootstrap.svg",
-      },
-      {
-        name: "Bulma",
-        image: "https://www.svgrepo.com/show/353527/bulma.svg",
-      },
-      {
-        name: "Chakra UI",
-        image: "https://avatars.githubusercontent.com/u/54212428?s=200&v=4",
-      },
-      {
-        name: "Styled Components",
-        image: "https://www.styled-components.com/atom.png",
-      },
-      {
-        name: "Figma",
-        image: "https://www.svgrepo.com/show/354987/figma.svg",
-      },
-    ],
+    skills: SkillsList.filter((el) => el.category === "Frontend"),
   },
   {
     title: "Backend",
-    skills: [
-      {
-        name: "Node Js",
-        image: "https://www.svgrepo.com/show/452075/node-js.svg",
-      },
-      {
-        name: "Express Js",
-        image: "express-svgrepo-com.svg",
-      },
-      {
-        name: "MongoDB",
-        image: "https://www.svgrepo.com/show/331488/mongodb.svg",
-      },
-      {
-        name: "EJS",
-        image: "https://www.svgrepo.com/show/373574/ejs.svg",
-      },
-      {
-        name: "REST API",
-        image: "api-app-svgrepo-com.svg",
-      },
-    ],
+    skills: SkillsList.filter((el) => el.category === "Backend"),
   },
   {
     title: "General",
-    skills: [
-      {
-        name: "C",
-        image: "https://cdn.worldvectorlogo.com/logos/c-1.svg",
-      },
-      {
-        name: "C++",
-        image: "https://cdn.worldvectorlogo.com/logos/c.svg",
-      },
-      {
-        name: "Git",
-        image: "https://www.svgrepo.com/show/452210/git.svg",
-      },
-      {
-        name: "GitHub",
-        image: "https://www.svgrepo.com/show/439171/github.svg",
-      },
-      {
-        name: "Jest",
-        image:
-          "jest-svgrepo-com.svg",
-      },
-      {
-        name: "Postman",
-        image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
-      },
-      {
-        name: "MatLab",
-        image: "matlab-svgrepo-com.svg",
-      },
-    ],
+    skills: SkillsList.filter((el) => el.category === "General"),
   },
   {
     title: "Additional Skills",
-    skills: [
-      {
-        name: "English",
-        image: "https://hatscripts.github.io/circle-flags/flags/gb.svg",
-      },
-      {
-        name: "German",
-        image: "https://hatscripts.github.io/circle-flags/flags/de.svg",
-      },
-      {
-        name: "Excel",
-        image: "https://www.svgrepo.com/show/373589/excel.svg",
-      },
-      {
-        name: "PowerPoint",
-        image: "https://www.svgrepo.com/show/373989/powerpoint.svg",
-      },
-      {
-        name: "Word",
-        image: "https://www.svgrepo.com/show/374187/word.svg",
-      },
-      {
-        name: "Fast Typing",
-        image: "typing-writing-svgrepo-com.svg",
-      },
-    ],
+    skills: SkillsList.filter((el) => el.category === "Additional"),
   },
 ];
 
@@ -170,7 +213,7 @@ export const experiences = [
       "Bulma",
       "Chakra UI",
       "Bootstrap",
-      "Figma"
+      "Figma",
     ],
   },
   {
@@ -244,7 +287,7 @@ export const projects = [
     title: "Little Lemon",
     date: "",
     description:
-    "Little Lemon is a full-stack MERN application designed for a seamless dining experience. Users can effortlessly explore a curated menu, place meal orders, make table reservations, and enjoy detailed insights into each menu item. The application prioritizes user authentication and authorization, ensuring a secure and personalized journey. Crafted with React, Node.js, MongoDB, and CSS, Little Lemon combines functionality with a delightful user interface.",
+      "Little Lemon is a full-stack MERN application designed for a seamless dining experience. Users can effortlessly explore a curated menu, place meal orders, make table reservations, and enjoy detailed insights into each menu item. The application prioritizes user authentication and authorization, ensuring a secure and personalized journey. Crafted with React, Node.js, MongoDB, and CSS, Little Lemon combines functionality with a delightful user interface.",
     image: "Little-Lemon.webp",
     tags: [
       "React",
@@ -259,26 +302,22 @@ export const projects = [
     category: "Full Stack",
     github: "https://github.com/AbubakrAliFOX/Little-Lemon",
     webapp: "https://little-lemon-5au5.onrender.com/",
-    figma: 'https://www.figma.com/file/Fseep3IOhSPoBjiCKTD032/Little-Lemon?type=design&node-id=0%3A1&mode=design&t=oxu7hd0GK6tNUdNV-1'
+    figma:
+      "https://www.figma.com/file/Fseep3IOhSPoBjiCKTD032/Little-Lemon?type=design&node-id=0%3A1&mode=design&t=oxu7hd0GK6tNUdNV-1",
   },
   {
     id: 6,
     title: "Rock Paper Scissors Game",
     date: "",
     description:
-    "A simple Rock, Paper, Scissors game built using React and styled with Chakra UI.",
+      "A simple Rock, Paper, Scissors game built using React and styled with Chakra UI.",
     image: "rock.webp",
-    tags: [
-      "React",
-      "Chakra UI",
-      "HTML",
-      "CSS",
-    ],
+    tags: ["React", "Chakra UI", "HTML", "CSS"],
     category: "Game",
     github: "https://github.com/AbubakrAliFOX/Rock-Paper-Scissors",
     webapp: "https://rock-paper-scissors-jezh.onrender.com/",
   },
-  { 
+  {
     id: 5,
     title: "YelpCamp",
     date: "",
@@ -342,7 +381,7 @@ export const projects = [
     description:
       "Welcome to my portfolio! This digital space is a reflection of my journey as a web developer. I'm very passionate about making captivating web experiences and building projects.",
     image: "Portfolio.webp",
-    tags: ["React", "Material UI", 'Styled Components', "HTML", "CSS"],
+    tags: ["React", "Material UI", "Styled Components", "HTML", "CSS"],
     category: "Web",
     github: "https://github.com/AbubakrAliFOX/Portfolio",
     webapp: "https://portfolio-kfwr.onrender.com",
@@ -372,119 +411,4 @@ export const projects = [
   },
 ];
 
-export const SkillsList = [
-  {
-    name: "HTML",
-    image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
-  },
-  {
-    name: "CSS",
-    image: "https://www.svgrepo.com/show/349330/css3.svg",
-  },
-  {
-    name: "JavaScript",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-  },
-  {
-    name: "React",
-    image:
-      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
-  },
-  {
-    name: "Material UI",
-    image: "https://www.svgrepo.com/show/354048/material-ui.svg",
-  },
-  {
-    name: "Bootstrap",
-    image: "https://www.svgrepo.com/show/353498/bootstrap.svg",
-  },
-  {
-    name: "Bulma",
-    image: "https://www.svgrepo.com/show/353527/bulma.svg",
-  },
-  {
-    name: "Node.js",
-    image: "https://www.svgrepo.com/show/452075/node-js.svg",
-  },
-  {
-    name: "Express.js",
-    image: "express-svgrepo-com.svg",
-  },
-  {
-    name: "MongoDB",
-    image: "https://www.svgrepo.com/show/331488/mongodb.svg",
-  },
-  {
-    name: "EJS",
-    image: "https://www.svgrepo.com/show/373574/ejs.svg",
-  },
-  {
-    name: "REST API",
-    image: "api-app-svgrepo-com.svg",
-  },
-  {
-    name: "Git",
-    image: "https://www.svgrepo.com/show/452210/git.svg",
-  },
-  {
-    name: "GitHub",
-    image: "https://www.svgrepo.com/show/439171/github.svg",
-  },
-  {
-    name: "Postman",
-    image: "https://www.svgrepo.com/show/354202/postman-icon.svg",
-  },
-  {
-    name: "English",
-    image: "https://hatscripts.github.io/circle-flags/flags/gb.svg",
-  },
-  {
-    name: "German",
-    image: "https://hatscripts.github.io/circle-flags/flags/de.svg",
-  },
-  {
-    name: "Excel",
-    image: "https://www.svgrepo.com/show/373589/excel.svg",
-  },
-  {
-    name: "PowerPoint",
-    image: "https://www.svgrepo.com/show/373989/powerpoint.svg",
-  },
-  {
-    name: "Word",
-    image: "https://www.svgrepo.com/show/374187/word.svg",
-  },
-  {
-    name: "Fast Typing",
-    image: "typing-writing-svgrepo-com.svg",
-  },
-  {
-    name: "Cloudinary",
-    image: "https://www.svgrepo.com/show/353566/cloudinary.svg",
-  },
-  {
-    name: "Leaflet.js",
-    image: "https://www.svgrepo.com/show/353991/leaflet.svg",
-  },
-  {
-    name: "YouTube's API",
-    image: "https://www.svgrepo.com/show/475700/youtube-color.svg",
-  },
-  {
-    name: "TV Maze's API",
-    image: "https://www.svgrepo.com/show/374216/api-opened.svg",
-  },
-  {
-    name: "Chakra UI",
-    image: "https://avatars.githubusercontent.com/u/54212428?s=200&v=4",
-  },
-  {
-    name: "Figma",
-    image: "https://www.svgrepo.com/show/354987/figma.svg",
-  },
-  {
-    name: "Styled Components",
-    image: "https://www.styled-components.com/atom.png",
-  },
-];
+console.log(skills[0].skills);

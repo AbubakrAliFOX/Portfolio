@@ -167,11 +167,9 @@ const ResumeButton = styled.a`
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
-  transition: all 0.2s ease-in-out !important;
-  
   background: ${({ theme }) => theme.card_light};
-  /* border: 2px solid white; */
   position: relative;
+
   &:hover {
     color: rgb(88 199 250 / 100%);
     transition: color 1s;
@@ -196,6 +194,7 @@ const ResumeButton = styled.a`
   &:after {
     filter: blur(3.5rem);
   }
+
   &:hover:after {
     filter: blur(1rem);
   }
@@ -204,7 +203,6 @@ const ResumeButton = styled.a`
   &:hover:after {
     inset: -0.35rem;
     transition: all 0.3s ease-out;
-
   }
 
   @media (max-width: 640px) {
@@ -215,7 +213,7 @@ const ResumeButton = styled.a`
 
 const Image = styled.img`
     width: 100%;
-    height 100%;
+    height: 100%;
     position: relative;
     border-radius: 50%;
     max-height: 400px;

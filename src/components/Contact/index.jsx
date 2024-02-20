@@ -18,13 +18,13 @@ import {
   ErrMsg,
   ContactButton,
 } from "./ContactStyle";
+import Loader from "./Loader";
 
 const Contact = () => {
   //hooks
   const form = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     emailjs
       .sendForm(
         "Contact Service",
@@ -76,10 +76,11 @@ const Contact = () => {
             email: "",
             message: "",
           }}
+          onSubmit={handleSubmit}
           validationSchema={validationSchema}
         >
           {({ isSubmitting, isValid, dirty, errors, touched, values }) => (
-            <ContactForm onSubmit={handleSubmit} ref={form}>
+            <ContactForm ref={form}>
               <ContactTitle>Email Me 🚀</ContactTitle>
 
               <Field
@@ -146,7 +147,7 @@ const Contact = () => {
                 disabled={!(isValid && dirty) || isSubmitting}
                 type="submit"
               >
-                Send
+                {isSubmitting ? <Loader /> : "Send"}
               </ContactButton>
             </ContactForm>
           )}

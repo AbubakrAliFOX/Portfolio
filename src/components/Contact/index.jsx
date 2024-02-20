@@ -6,6 +6,11 @@ import { toast } from "react-toastify";
 import { Formik, Field, ErrorMessage } from "formik";
 import validationSchema from "./validationSchema";
 
+const serviceID = import.meta.env.VITE_SERVICE_ID;
+const templateID = import.meta.env.VITE_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+
 import {
   Container,
   Wrapper,
@@ -27,10 +32,10 @@ const Contact = () => {
   const handleSubmit = () => {
     emailjs
       .sendForm(
-        "Contact Service",
-        "template_5og5hnc",
+        serviceID,
+        templateID,
         form.current,
-        "p_1pev07R-1uqEYNO"
+        publicKey
       )
       .then(
         (result) => {

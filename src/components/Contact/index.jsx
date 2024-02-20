@@ -1,8 +1,27 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import * as Yup from "yup";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import FilteredPropsInputField from "./FilteredPropsInputField";
+
+const validationSchema = Yup.object({
+  email: Yup.string().email("Invalid email").required("Email is required"),
+  name: Yup.string()
+    .min(2, "Name is too short")
+    .max(50, "Name is too Long!")
+    .required("Name is required"),
+  subject: Yup.string()
+    .min(8, "The subject is too short")
+    .max(50, "The subject is too long")
+    .required("Subject is required"),
+  message: Yup.string()
+    .min(5, "The message is too short")
+    .max(1000, "The message is too long")
+    .required("Message is required"),
+});
 
 const Container = styled.div`
   display: flex;
@@ -56,7 +75,7 @@ const Desc = styled.div`
   }
 `;
 
-const ContactForm = styled.form`
+const ContactForm = styled(Form)`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -67,6 +86,7 @@ const ContactForm = styled.form`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   margin-top: 28px;
   gap: 12px;
+  border: 0.1px solid rgba(0, 99, 255, 1);
 `;
 
 const ContactTitle = styled.div`
@@ -79,7 +99,7 @@ const ContactTitle = styled.div`
 const ContactInput = styled.input`
   flex: 1;
   background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
+  border: 1px solid ${({ theme}) => theme.text_secondary};
   outline: none;
   font-size: 18px;
   color: ${({ theme }) => theme.text_primary};
@@ -88,6 +108,45 @@ const ContactInput = styled.input`
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
+
+  ${({ valid }) =>
+    valid &&
+    css`
+      border: 2px solid rgb(0, 156, 38);
+
+      &:focus,
+      &:active {
+        border: 2px solid rgb(0, 156, 38);
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 2px solid rgb(0, 156, 38);
+      }
+    `}
+
+  ${({ error }) =>
+    error &&
+    css`
+      border: 2px solid rgb(191, 49, 12);
+      outline: none;
+
+      &:focus,
+      &:active {
+        border: 2px solid rgb(191, 49, 12);
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 2px solid rgb(191, 49, 12);
+      }
+    `}
 `;
 
 const ContactInputMessage = styled.textarea`
@@ -102,13 +161,60 @@ const ContactInputMessage = styled.textarea`
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
+
+  ${({ valid }) =>
+    valid &&
+    css`
+      border: 2px solid rgb(0, 156, 38);
+
+      &:focus,
+      &:active {
+        border: 2px solid rgb(0, 156, 38);
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 2px solid rgb(0, 156, 38);
+      }
+    `}
+
+  ${({ error }) =>
+    error &&
+    css`
+      border: 2px solid rgb(191, 49, 12);
+      outline: none;
+
+      &:focus,
+      &:active {
+        border: 2px solid rgb(191, 49, 12);
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 2px solid rgb(191, 49, 12);
+      }
+    `}
+`;
+
+const ErrMsg = styled.span`
+  display: block;
+  color: red;
+  font-size: 18px;
+  margin-top: 3px;
+  margin-left: 10px;
 `;
 
 const ContactButton = styled.button`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background-color: transparent;
+  background-color: #0063ff;
   border: 1.8px solid ${({ theme }) => theme.primary};
   background: -moz-;
   background: -webkit-;
@@ -120,9 +226,17 @@ const ContactButton = styled.button`
   font-weight: 600;
   cursor: pointer;
   transition: all 0.6s ease-in-out;
-  &:hover {
-    background-color: ${({ theme }) => theme.primary};
+  /* &:hover {
+    background-color: #0063ff;
     color: ${({ theme }) => theme.white};
+  } */
+
+  &:disabled {
+    background-color: transparent;
+  }
+
+  &:disabled:hover {
+    cursor: not-allowed;
   }
 `;
 
@@ -176,22 +290,185 @@ const Contact = () => {
         <Desc>
           Feel free to reach out to me for any questions or business inquires!
         </Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput required placeholder="Your Email" name="from_email" />
-          <ContactInput required placeholder="Your Name" name="from_name" />
-          <ContactInput required placeholder="Subject" name="subject" />
-          <ContactInputMessage
-            required
-            placeholder="Message"
-            rows="4"
-            name="message"
-          />
-          <ContactButton type="submit">Send</ContactButton>
-        </ContactForm>
+        <Formik
+          initialValues={{
+            name: "",
+            subject: "",
+            email: "",
+            message: "",
+          }}
+          validationSchema={validationSchema}
+        >
+          {({ isSubmitting, isValid, dirty, errors, touched, values }) => (
+            <ContactForm onSubmit={handleSubmit} ref={form}>
+              <ContactTitle>Email Me 🚀</ContactTitle>
+
+              <Field
+                as={ContactInput}
+                value={values.email}
+                placeholder="Your Email"
+                id="email"
+                name="email"
+                valid={touched.email && !errors.email}
+                error={touched.email && errors.email}
+              />
+              <ErrorMessage
+                name="email"
+                component={ErrMsg}
+                className="error-message"
+              />
+
+              <Field
+                as={ContactInput}
+                value={values.name}
+                placeholder="Your Name"
+                id="name"
+                name="name"
+                valid={touched.name && !errors.name}
+                error={touched.name && errors.name}
+              />
+              <ErrorMessage
+                name="name"
+                component={ErrMsg}
+                className="error-message"
+              />
+
+              <Field
+                as={ContactInput}
+                value={values.subject}
+                placeholder="Subject"
+                id="subject"
+                name="subject"
+                valid={touched.subject && !errors.subject}
+                error={touched.subject && errors.subject}
+              />
+              <ErrorMessage
+                name="subject"
+                component={ErrMsg}
+                className="error-message"
+              />
+
+              <Field
+                as={ContactInputMessage}
+                placeholder="Message"
+                rows="4"
+                name="message"
+                id="message"
+                valid={touched.message && !errors.message}
+                error={touched.message && errors.message}
+              />
+              <ErrorMessage
+                name="message"
+                component={ErrMsg}
+                className="error-message"
+              />
+
+              <ContactButton
+                disabled={!(isValid && dirty) || isSubmitting}
+                type="submit"
+              >
+                Send
+              </ContactButton>
+            </ContactForm>
+          )}
+        </Formik>
       </Wrapper>
     </Container>
   );
 };
+
+// <Formik
+//   initialValues={{
+//     name: "",
+//     subject: "",
+//     email: "",
+//     message: "",
+//   }}
+//   onSubmit={handleSubmit}
+//   validationSchema={validationSchema}
+// >
+//   {({ isSubmitting, isValid, dirty, errors, touched }) => (
+//     <Form>
+//       <section className="register-form">
+//         <div className="form-field">
+//           <label className="form-control" htmlFor="name">
+//             Name
+//           </label>
+//           <Field
+//             placeholder="Your name"
+//             className={errors.name && touched.name && "red-border"}
+//             name="name"
+//             id="name"
+//             type="text"
+//           />
+//           <ErrorMessage
+//             name="name"
+//             component="span"
+//             className="error-message"
+//           />
+//         </div>
+//         <div className="form-field">
+//           <label className="form-control" htmlFor="password">
+//             Password
+//           </label>
+//           <Field
+//             placeholder="Your password"
+//             className={errors.password && touched.password && "red-border"}
+//             name="password"
+//             id="password"
+//             type="password"
+//           />
+//           <ErrorMessage
+//             name="password"
+//             component="span"
+//             className="error-message"
+//           />
+//         </div>
+//         <div className="form-field">
+//           <label className="form-control" htmlFor="email">
+//             Email
+//           </label>
+//           <Field
+//             placeholder="example@gmail.com"
+//             className={errors.email && touched.email && "red-border"}
+//             name="email"
+//             id="email"
+//             type="text"
+//           />
+//           <ErrorMessage
+//             name="email"
+//             component="span"
+//             className="error-message"
+//           />
+//         </div>
+//         <div className="form-field">
+//           <label className="form-control" htmlFor="address">
+//             Address
+//           </label>
+//           <Field
+//             placeholder="Your address"
+//             className={errors.address && touched.address && "red-border"}
+//             name="address"
+//             id="address"
+//             type="text"
+//           />
+//           <ErrorMessage
+//             name="address"
+//             component="span"
+//             className="error-message"
+//           />
+//         </div>
+//       </section>
+//       <button
+//         className="submit-form-button"
+//         type="submit"
+//         disabled={!(isValid && dirty) || isSubmitting}
+//       >
+//         Create Account
+//       </button>
+//       {isSubmitting && <Loader />}
+//     </Form>
+//   )}
+// </Formik>;
 
 export default Contact;

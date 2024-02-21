@@ -38,7 +38,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          toast.success("Your email was sent successfully", {
+          toast.success("Email sent successfully", {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,

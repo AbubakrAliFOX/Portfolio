@@ -301,7 +301,7 @@ export const projects = [
       "Dive into the world of colors with my RGB Colors Game! Challenge your color recognition skills as you're presented with six options to match the hidden RGB color code. Test your eye for detail and see how fast you can identify the correct color. A delightful and interactive way to explore the beauty of RGB colors while having some fun. Ready to put your color skills to the test?",
     image: "ColorGame.gif",
     tags: ["JavaScript", "HTML", "CSS", "Bootstrap"],
-    category: "Web",
+    category: "web app",
     github: "https://github.com/AbubakrAliFOX/ColorsGame",
     webapp: "https://colorgame-6dia.onrender.com",
   },

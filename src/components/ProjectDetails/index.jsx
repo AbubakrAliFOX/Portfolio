@@ -308,9 +308,11 @@ const index = ({ openModal, setOpenModal }) => {
             <Button dull href={project?.github} target="new">
               View Code
             </Button>
-            <Button href={project?.webapp} target="new">
+            {project?.webapp && (
+              <Button href={project?.webapp} target="new">
               Live App
             </Button>
+            )}
             {project?.figma && (
               <Figma href={project?.figma} target="new">
                 <FigmaImage src="https://www.svgrepo.com/show/354987/figma.svg" />

@@ -283,7 +283,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 0,
+    // id: 0,
     title: "Todo List",
     date: "",
     description: "A basic Todo List App to practice React and React State.",
@@ -294,7 +294,7 @@ export const projects = [
     webapp: "https://todolist-m5au.onrender.com/",
   },
   {
-    id: 1,
+    // id: 1,
     title: "RGB Color Game",
     date: "",
     description:
@@ -306,7 +306,7 @@ export const projects = [
     webapp: "https://colorgame-6dia.onrender.com",
   },
   {
-    id: 2,
+    // id: 2,
     title: "My Portfolio",
     date: "",
     description:
@@ -318,7 +318,7 @@ export const projects = [
     webapp: "https://portfolio-kfwr.onrender.com",
   },
   {
-    id: 3,
+    // id: 3,
     title: "ScoreKeeper",
     date: "",
     description:
@@ -330,7 +330,31 @@ export const projects = [
     webapp: "https://score-keeper-0quo.onrender.com",
   },
   {
-    id: 4,
+    // id: 3,
+    title: "iPhone's Calculator",
+    date: "",
+    description:
+      "A simple iPhone calculator app built using React. It mimics the functionality and design of the native calculator app found on iPhones.",
+    image: "calc.webp",
+    tags: ["React", "HTML", "CSS", "JavaScript"],
+    category: "web app",
+    github: "https://github.com/AbubakrAliFOX/Calculator-React",
+    webapp: "https://calculator-0alc.onrender.com/",
+  },
+  {
+    // id: 6,
+    title: "Rock Paper Scissors Game",
+    date: "",
+    description:
+      "A simple Rock, Paper, Scissors game built using React and styled with Chakra UI.",
+    image: "rock.webp",
+    tags: ["React", "Chakra UI", "HTML", "CSS"],
+    category: "Game",
+    github: "https://github.com/AbubakrAliFOX/Rock-Paper-Scissors",
+    webapp: "https://rock-paper-scissors-jezh.onrender.com/",
+  },
+  {
+    // id: 4,
     title: "TV Scout",
     date: "",
     description:
@@ -352,7 +376,18 @@ export const projects = [
     webapp: "https://tv-scout.onrender.com",
   },
   {
-    id: 5,
+    // id: 6,
+    title: "Banking System CLI",
+    date: "",
+    description:
+      "A command-line banking system implemented in C++",
+    image: "bank.webp",
+    tags: ["C++"],
+    category: "CLI",
+    github: "https://github.com/AbubakrAliFOX/Banking-System.git"
+  },
+  {
+    // id: 5,
     title: "YelpCamp",
     date: "",
     description:
@@ -375,19 +410,7 @@ export const projects = [
     webapp: "https://yelpcamp-zynh.onrender.com",
   },
   {
-    id: 6,
-    title: "Rock Paper Scissors Game",
-    date: "",
-    description:
-      "A simple Rock, Paper, Scissors game built using React and styled with Chakra UI.",
-    image: "rock.webp",
-    tags: ["React", "Chakra UI", "HTML", "CSS"],
-    category: "Game",
-    github: "https://github.com/AbubakrAliFOX/Rock-Paper-Scissors",
-    webapp: "https://rock-paper-scissors-jezh.onrender.com/",
-  },
-  {
-    id: 7,
+    // id: 7,
     title: "Little Lemon",
     date: "",
     description:

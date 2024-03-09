@@ -100,6 +100,11 @@ export const SkillsList = [
     category: "General",
   },
   {
+    name: "C#",
+    image: "c--4.svg",
+    category: "General",
+  },
+  {
     name: "Git",
     image: "https://www.svgrepo.com/show/452210/git.svg",
     category: "General",

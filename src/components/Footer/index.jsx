@@ -101,7 +101,9 @@ function Footer() {
             <WhatsAppIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2023 Abubakr Eldaw. All rights reserved.</Copyright>
+        <Copyright>
+          &copy; {new Date().getFullYear()} Abubakr Eldaw. All rights reserved.
+        </Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

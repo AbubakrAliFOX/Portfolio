@@ -2,7 +2,7 @@ import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
-import { SkillsList } from "../../data/constants";
+import { skillsList } from "../../data/skills";
 
 const Container = styled.div`
   width: 100%;
@@ -243,7 +243,7 @@ const index = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
   const list = [];
   for (let tag of project.tags) {
-    for (let skill of SkillsList) {
+    for (let skill of skillsList) {
       if (skill.name == tag) {
         list.push(skill);
       }
@@ -310,8 +310,8 @@ const index = ({ openModal, setOpenModal }) => {
             </Button>
             {project?.webapp && (
               <Button href={project?.webapp} target="new">
-              Live App
-            </Button>
+                Live App
+              </Button>
             )}
             {project?.figma && (
               <Figma href={project?.figma} target="new">

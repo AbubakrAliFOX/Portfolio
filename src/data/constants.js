@@ -5,7 +5,7 @@ export const Bio = {
     "With a keyboard as my paintbrush, I create user-centric experiences, one line of code at a time. I'm on a mission to bridge innovation and creativity, one project at a time. Welcome to my world of code, design, and possibilities.",
   github: "https://github.com/AbubakrAliFOX",
   resume:
-    "https://drive.google.com/file/d/1m8psU5NFThm9-3I-8TIiuMjLBtsfxja3/view?usp=drive_link",
+    "https://drive.google.com/file/d/1hghiwLTnEwXU63lfEdhkgHopADZv2mmt/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/abubakr-eldaw/",
   facebook: "https://www.facebook.com/profile.php?id=61550096896475",
   whatsapp: "https://wa.me/966537902993",

@@ -29,41 +29,35 @@ const Contact = () => {
   const form = useRef();
 
   const handleSubmit = () => {
-    emailjs
-      .sendForm(
-        serviceID,
-        templateID,
-        form.current,
-        publicKey
-      )
-      .then(
-        (result) => {
-          toast.success("Email sent successfully", {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-          });
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error("An error occured", {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-          });
-        }
-      );
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey).then(
+      (result) => {
+        toast.success("Email sent successfully", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+        form.current.reset();
+      },
+      (error) => {
+        console.log(error.text);
+        toast.error("An error occured", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+        form.current.reset();
+      }
+    );
   };
 
   return (

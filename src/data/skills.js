@@ -1,20 +1,26 @@
 export const skillsList = [
   // Core Frontend Skills
+  // {
+  //   name: "HTML",
+  //   image: "https://www.svgrepo.com/show/452228/html-5.svg",
+  //   category: "Frontend",
+  //   importance: "sub",
+  // },
+  // {
+  //   name: "CSS",
+  //   image: "https://www.svgrepo.com/show/349330/css3.svg",
+  //   category: "Frontend",
+  //   importance: "sub",
+  // },
+  // {
+  //   name: "JavaScript",
+  //   image: "https://www.svgrepo.com/show/349419/javascript.svg",
+  //   category: "Frontend",
+  //   importance: "sub",
+  // },
   {
-    name: "HTML",
-    image: "https://www.svgrepo.com/show/452228/html-5.svg",
-    category: "Frontend",
-    importance: "main",
-  },
-  {
-    name: "CSS",
-    image: "https://www.svgrepo.com/show/349330/css3.svg",
-    category: "Frontend",
-    importance: "main",
-  },
-  {
-    name: "JavaScript",
-    image: "https://www.svgrepo.com/show/349419/javascript.svg",
+    name: "Angular",
+    image: "https://www.svgrepo.com/show/452156/angular.svg",
     category: "Frontend",
     importance: "main",
   },
@@ -23,6 +29,12 @@ export const skillsList = [
     image: "https://www.svgrepo.com/show/354259/react.svg",
     category: "Frontend",
     importance: "main",
+  },
+  {
+    name: "Figma",
+    image: "https://www.svgrepo.com/show/354987/figma.svg",
+    category: "Frontend",
+    importance: "sub",
   },
   {
     name: "Bootstrap",
@@ -48,12 +60,6 @@ export const skillsList = [
     category: "Frontend",
     importance: "sub",
   },
-  {
-    name: "Figma",
-    image: "https://www.svgrepo.com/show/354987/figma.svg",
-    category: "Frontend",
-    importance: "main",
-  },
   //   {
   //     name: "Bulma",
   //     image: "https://www.svgrepo.com/show/353527/bulma.svg",
@@ -77,6 +83,12 @@ export const skillsList = [
     image: "https://www.svgrepo.com/show/353991/leaflet.svg",
   },
   {
+    name: ".NET",
+    image: "https://www.svgrepo.com/show/376369/dotnet.svg",
+    category: "Backend",
+    importance: "main",
+  },
+  {
     name: "Node.js",
     image: "https://www.svgrepo.com/show/452075/node-js.svg",
     category: "Backend",
@@ -86,49 +98,49 @@ export const skillsList = [
     name: "Express.js",
     image: "express-svgrepo-com.svg",
     category: "Backend",
-    importance: "sub",
+    importance: "main",
   },
   {
-    name: "MongoDB",
-    image: "https://www.svgrepo.com/show/331488/mongodb.svg",
+    name: "Entity Framework Core",
+    image: "efcore.webp",
     category: "Backend",
-    importance: "main",
+    importance: "sub",
   },
   {
     name: "MySQL",
     image: "mysql.svg",
     category: "Backend",
-    importance: "main",
+    importance: "sub",
   },
   {
     name: "MS SQL Server",
     image: "microsoftsqlserver.svg",
     category: "Backend",
-    importance: "main",
+    importance: "sub",
   },
-  {
-    name: "PHP",
-    image: "https://www.svgrepo.com/show/349474/php.svg",
-    category: "Backend",
-    importance: "main",
-  },
+  // {
+  //   name: "PHP",
+  //   image: "https://www.svgrepo.com/show/349474/php.svg",
+  //   category: "Backend",
+  //   importance: "main",
+  // },
   {
     name: "Laravel",
     image: "https://www.svgrepo.com/show/353985/laravel.svg",
     category: "Backend",
-    importance: "sub",
+    importance: "main",
   },
-  {
-    name: "REST API",
-    image: "api-app-svgrepo-com.svg",
-    category: "Backend",
-    importance: "sub",
-  },
+  // {
+  //   name: "REST API",
+  //   image: "api-app-svgrepo-com.svg",
+  //   category: "Backend",
+  //   importance: "sub",
+  // },
   {
     name: "ADO.NET",
     image: "https://www.svgrepo.com/show/376369/dotnet.svg",
     category: "Backend",
-    importance: "sub",
+    importance: "main",
   },
   {
     name: "T-SQL",
@@ -137,10 +149,15 @@ export const skillsList = [
     importance: "sub",
   },
   {
+    name: "MongoDB",
+    image: "https://www.svgrepo.com/show/331488/mongodb.svg",
+    category: "Backend",
+    importance: "sub",
+  },
+  {
     name: "EJS",
     image: "https://www.svgrepo.com/show/373574/ejs.svg",
     category: "Backend",
-    importance: "sub",
   },
   {
     name: "Cloudinary",
